@@ -3,3 +3,16 @@
 - JSX : JavaScript안의 HTML이며, React에만 존재.
 - Component : HTML을 반환하는 함수
 - React에는 하나의 Component만 존재 할 수 있다
+
+## 2.1. Reuseable Components with JSX + Props
+- props : component에 정보를 보내는 방법
+- Component의 첫 글자는 항상 대문자
+```JSX
+//{ fav } 대신 props로 받기 가능
+function Food( {fav} ) {
+  return 
+    //props로 받았을 시, props.fav로 사용
+    <span> I like {fav} </span>
+}
+<Food fav="apple" />
+```
