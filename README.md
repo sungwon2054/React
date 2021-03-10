@@ -34,6 +34,7 @@
 * Lee Jehwan([LeeJehwan](https://github.com/LeeJehwan))
 * Jeong Sungwon([sungwon2054](https://github.com/sungwon2054))
 * Ahn Daehyun([daehyun1023](https://github.com/daehyun1023))
+- Lim Hyeonjin([hamjins](https://github.com/hamjins))
 
 # <a name="project-result"></a>🏆Project Results
 
