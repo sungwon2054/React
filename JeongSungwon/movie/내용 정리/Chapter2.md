@@ -23,3 +23,8 @@ function Food( {fav} ) {
 const study = ["DaeHyun", "jewhan", "sungwon"]
 study.map(name => {return name + " fighting"})
 ```
+
+## 2.3. map Recap
+- react의 elment들은 유일해야하고, list에 들어가면 유일성을 잃는다.  
+(따라서, key 값을 설정해줘야함)
+- react에서는 img의 접근성 오류도 나타내준다.
