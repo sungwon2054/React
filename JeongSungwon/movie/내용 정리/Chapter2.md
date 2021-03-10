@@ -16,3 +16,10 @@ function Food( {fav} ) {
 }
 <Food fav="apple" />
 ```
+
+## 2.2. Dynamic Component Generation
+- map: JavaScript에서 function을 취해서 array의 각 item을 적용
+```javascript
+const study = ["DaeHyun", "jewhan", "sungwon"]
+study.map(name => {return name + " fighting"})
+```
