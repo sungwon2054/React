@@ -28,3 +28,14 @@ study.map(name => {return name + " fighting"})
 - react의 elment들은 유일해야하고, list에 들어가면 유일성을 잃는다.  
 (따라서, key 값을 설정해줘야함)
 - react에서는 img의 접근성 오류도 나타내준다.
+
+## 2.4. Protection with PropTypes
+- PropTypes : props에 잘못된 값을 주는 것을 확인해줌.  
+("npm install prop-types"로 설치)
+- https://www.npmjs.com/package/prop-types
+```JSX
+import PropTypes from "prop-types";
+Food.propTypes {
+  name: PropTypes.string
+}
+```
