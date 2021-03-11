@@ -5,13 +5,13 @@ class App extends React.Component {
   state = {
     count: 0
   };
-  
+  // 직접 state를 사용하지 않고 arrow function을 통해 state값을 사용할 수 있음.
   add = () => {
-    console.log("add");
+    this.setState(current => ({ count: current.count + 1 }) );
   }
 
   minus = () => {
-    console.log("minus");
+    this.setState(current => ({ count: current.count - 1 }) );
   }
 
   render() {
