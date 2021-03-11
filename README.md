@@ -38,6 +38,6 @@
 
 # <a name="project-result"></a>🏆Project Results
 
-* [LeeJehwan](https://alpha-ka-js.github.io/React/LeeJehwan/movie/clone-project/)
-* [sungwon2054](https://alpha-ka-js.github.io/React/JeongSungwon/movie/clone-project/)
-* [daehyun1023](https://alpha-ka-js.github.io/React/AhnDaehyun/movie/clone-project/)
+* [LeeJehwan](https://alpha-ka-js.github.io/React/LeeJehwan/movie/)
+* [sungwon2054](https://alpha-ka-js.github.io/React/JeongSungwon/movie/)
+* [daehyun1023](https://alpha-ka-js.github.io/React/AhnDaehyun/movie/)
