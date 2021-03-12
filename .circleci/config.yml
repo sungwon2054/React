@@ -1,0 +1,94 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@3.0.0
+
+jobs:
+  sungwon-movie-deployment:
+    docker:
+      # The primary container is an instance of the first image listed. The job's commands run in this container.
+      - image: cimg/node:current
+    steps:
+      # Reuse the workspace from the build job
+      - checkout
+      - run:
+          name: check
+          command: bash ./.circleci/check.sh JeongSungwon/movie
+      - run:
+          name: deploy
+          command: |
+            cd JeongSungwon/movie
+            npm install
+            npm run deploy
+  jehwan-movie-deployment:
+    docker:
+      # The primary container is an instance of the first image listed. The job's commands run in this container.
+      - image: cimg/node:current
+    steps:
+      # Reuse the workspace from the build job
+      - checkout
+      - run:
+          name: check
+          command: bash ./.circleci/check.sh LeeJehwan/movie
+      - run:
+          name: deploy
+          command: |
+            cd LeeJehwan/movie
+            npm install
+            npm run deploy
+  daehyun-movie-deployment:
+    docker:
+      # The primary container is an instance of the first image listed. The job's commands run in this container.
+      - image: cimg/node:current
+    steps:
+      # Reuse the workspace from the build job
+      - checkout
+      - run:
+          name: check
+          command: bash ./.circleci/check.sh AhnDaeHyun/movie
+      - run:
+          name: deploy
+          command: |
+            cd AhnDaeHyun/movie
+            npm install
+            npm run deploy
+   hamjins-movie-deployment:
+    docker:
+      # The primary container is an instance of the first image listed. The job's commands run in this container.
+      - image: cimg/node:current
+    steps:
+      # Reuse the workspace from the build job
+      - checkout
+      - run:
+          name: check
+          command: bash ./.circleci/check.sh hamjins/movie
+      - run:
+          name: deploy
+          command: |
+            cd hamjins/movie
+            npm install
+            npm run deploy
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - sungwon-movie-deployment:
+          filters:
+            branches:
+              only:
+                - main
+      - jehwan-movie-deployment:
+          filters:
+            branches:
+              only:
+                - main
+      - daehyun-movie-deployment:
+          filters:
+            branches:
+              only:
+                - main
+      - hamjins-movie-deployment:
+          filters:
+            branches:
+              only:
+                - main
