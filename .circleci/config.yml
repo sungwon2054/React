@@ -52,7 +52,7 @@ jobs:
             cd AhnDaeHyun/movie
             npm install
             npm run deploy
-   hamjins-movie-deployment:
+  hamjins-movie-deployment:
     docker:
       # The primary container is an instance of the first image listed. The job's commands run in this container.
       - image: cimg/node:current
