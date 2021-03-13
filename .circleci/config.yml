@@ -15,10 +15,19 @@ jobs:
           name: check
           command: bash ./.circleci/check.sh JeongSungwon/movie
       - run:
-          name: deploy
+          name: Install and configure dependencies
           command: |
             cd JeongSungwon/movie
+            git config user.email "chsw93@gmail.com"
+            git config user.name "sungwon"
             npm install
+      - add_ssh_keys:
+          fingerprints:
+            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: |
+            cd JeongSungwon/movie
             npm run deploy
   jehwan-movie-deployment:
     docker:
@@ -31,10 +40,19 @@ jobs:
           name: check
           command: bash ./.circleci/check.sh LeeJehwan/movie
       - run:
-          name: deploy
+          name: Install and configure dependencies
           command: |
             cd LeeJehwan/movie
+            git config user.email "wpghks7@naver.com"
+            git config user.name "leejehwan"
             npm install
+      - add_ssh_keys:
+          fingerprints:
+            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: |
+            cd LeeJehwan/movie
             npm run deploy
   daehyun-movie-deployment:
     docker:
@@ -47,10 +65,19 @@ jobs:
           name: check
           command: bash ./.circleci/check.sh AhnDaeHyun/movie
       - run:
-          name: deploy
+          name: Install and configure dependencies
           command: |
             cd AhnDaeHyun/movie
+            git config user.email "daehyun1023@naver.com"
+            git config user.name "daehyun1023"
             npm install
+      - add_ssh_keys:
+          fingerprints:
+            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: |
+            cd AhnDaeHyun/movie
             npm run deploy
   hamjins-movie-deployment:
     docker:
@@ -63,10 +90,20 @@ jobs:
           name: check
           command: bash ./.circleci/check.sh hamjins/movie
       - run:
-          name: deploy
+          name: Install and configure dependencies
           command: |
             cd hamjins/movie
+            git config user.email "coronal95@naver.com"
+            git config user.name "hamjins"
             npm install
+            npm run deploy
+      - add_ssh_keys:
+          fingerprints:
+            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: |
+            cd hamjins/movie
             npm run deploy
 workflows:
   version: 2
