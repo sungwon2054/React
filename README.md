@@ -1,4 +1,7 @@
 <p align="center"> 
+    <a href="https://circleci.com/gh/Alpha-ka-JS/React/tree/main">
+        <img src="https://circleci.com/gh/Alpha-ka-JS/React/tree/main.svg?style=svg">
+    </a>
     <a href="https://github.com/Alpha-ka-JS/React/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/Alpha-ka-js/React?&color=brightgreen" />
     </a>
