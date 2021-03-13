@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --dest daehyun1023/",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
@@ -37,5 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://daehyun1023.github.io/React/"
+  "homepage": "https://alpha-ka-js.github.io/React/daehyun1023/"
 }
