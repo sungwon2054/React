@@ -38,7 +38,7 @@
 
 # <a name="project-result"></a>🏆Project Results
 
-* [LeeJehwan](https://leejehwan.github.io/React/)
-* [sungwon2054](https://sungwon2054.github.io/React/)
-* [daehyun1023](https://daehyun1023.github.io/React/)
-* [hamjins](https://hamjins.github.io/React/)
+* [LeeJehwan](https://alpha-ka-js.github.io/React/LeeJehwan/)
+* [sungwon2054](https://alpha-ka-js.github.io/React/sungwon2054/)
+* [daehyun1023](https://alpha-ka-js.github.io/React/daehyun1023/)
+* [hamjins](https://alpha-ka-js.github.io/React/hamjins/)
