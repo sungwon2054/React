@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --dest sungwon2054/",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
