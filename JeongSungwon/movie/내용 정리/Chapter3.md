@@ -21,3 +21,7 @@ render() {
 
 - React는 props로 onClick을 주면 클릭효과를 줌  
 (JavaScript의 addEventlistener로 click을 주는 것과 같음)
+
+## 3.1 All you need to know about State
+- state 값을 직접 변경할 수 없고, setState()를 사용한다
+- React는 setState() 후 render function을 재실행 시킴.
