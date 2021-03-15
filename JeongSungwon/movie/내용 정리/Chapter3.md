@@ -25,3 +25,10 @@ render() {
 ## 3.1 All you need to know about State
 - state 값을 직접 변경할 수 없고, setState()를 사용한다
 - React는 setState() 후 render function을 재실행 시킴.
+
+## 3.2. Component Life Cycle
+- function component : render()만 갖을 수 있음
+- class component : 다른 함수도 갖고 있음
+  - componentDidMount() - 생성 될 때
+  - componentDidUpdate - 업데이트 할 때
+  - componentWillUnmount - 제거 할 때
