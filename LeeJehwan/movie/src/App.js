@@ -1,27 +1,27 @@
 import React from "react";
+import axios from "axios";
 
 class App extends React.Component {
   state = {
     isLoading: true,
     movies: [],
-    time: 5000,
+  };
+
+  getMoives = async () => {
+    const movies = await axios.get(
+      "https://yts-proxy.nomadcoders1.now.sh/list_movies.json"
+    );
   };
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ isLoading: false });
-    }, this.state.time);
-    setInterval(() => {
-      this.setState((current) => ({ time: current.time - 1000 }));
-    }, 1000);
+    this.getMoives();
   }
 
   render() {
-    const { isLoading, time } = this.state;
+    const { isLoading, movies } = this.state;
     return (
       <div>
         <h2>{isLoading ? "Loading..." : "We are ready"}</h2>
-        <h3>{isLoading ? time / 1000 : ""}</h3>
       </div>
     );
   }
