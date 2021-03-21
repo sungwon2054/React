@@ -23,7 +23,7 @@ jobs:
             npm install
       - add_ssh_keys:
           fingerprints:
-            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+            - ${github_key}
       - run:
           name: Deploy docs to gh-pages branch
           command: |
@@ -48,7 +48,7 @@ jobs:
             npm install
       - add_ssh_keys:
           fingerprints:
-            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+            - ${github_key}
       - run:
           name: Deploy docs to gh-pages branch
           command: |
@@ -73,7 +73,7 @@ jobs:
             npm install
       - add_ssh_keys:
           fingerprints:
-            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+            - ${github_key}
       - run:
           name: Deploy docs to gh-pages branch
           command: |
@@ -99,7 +99,7 @@ jobs:
             npm run deploy
       - add_ssh_keys:
           fingerprints:
-            - "c7:70:51:47:98:4e:a1:da:30:e6:a3:7a:63:d1:9a:13"
+            - ${github_key}
       - run:
           name: Deploy docs to gh-pages branch
           command: |
