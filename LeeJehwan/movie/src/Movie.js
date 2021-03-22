@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import "./Movie.css";
 
 function Movie({ year, title, summary, poster, genres }) {
+  const mumble =
+    "There is no plot and it is so short that I just write it roughly. If you are curious, buy the movie yourself. But it might not be possible to see it because it is corona. Well, what else should I use? It might not be long this much, but it's not as long as I thought. Hmm";
+  const finedSummary =
+    summary.length > 200 ? summary.slice(0, 400) : summary + mumble;
   return (
     <div className='movie'>
       <img src={poster} alt={title} title={title} />
@@ -16,7 +20,7 @@ function Movie({ year, title, summary, poster, genres }) {
             </li>
           ))}
         </ul>
-        <p className='movie__summary'>{summary.slice(0, 140)}...</p>
+        <p className='movie__summary'>{finedSummary}...</p>
       </div>
     </div>
   );
