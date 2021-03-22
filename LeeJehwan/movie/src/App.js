@@ -45,7 +45,7 @@ class App extends React.Component {
         ) : (
           <div className='movies'>
             {movies.map((movie) => (
-              <Fade left>
+              <Fade key={movie.id} left>
                 <Movie
                   key={movie.id}
                   year={movie.year}
