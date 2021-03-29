@@ -22,10 +22,7 @@ class Home extends React.Component {
     } = await axios.get(
       "https://yts-proxy.nomadcoders1.now.sh/list_movies.json?sort_by=rating"
     );
-    // I wanna see more loading
-    setTimeout(() => {
-      this.setState({ movies, isLoading: false });
-    }, 2000);
+    this.setState({ movies, isLoading: false });
   };
 
   componentDidMount() {
