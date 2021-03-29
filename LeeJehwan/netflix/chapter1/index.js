@@ -32,3 +32,34 @@ const {
 
 console.log(diffName, lastName, nationality);
 console.log(breakfast, lunch, dinner);
+
+// 1.4 Spread Operator
+const days = ["Mon", "Tues", "Wed"];
+const otherDays = ["Thu", "Fri", "Sat"];
+
+const allDays = days + otherDays;
+console.log(allDays);
+// Mon,Tues,WedThu,Fri,Sat -> string
+
+const allDays2 = [days + otherDays];
+console.log(allDays2);
+// [ 'Mon,Tues,WedThu,Fri,Sat' ] -> one array with string
+
+const allDays3 = [days, otherDays];
+console.log(allDays3);
+// [ [ 'Mon', 'Tues', 'Wed' ], [ 'Thu', 'Fri', 'Sat' ] ]
+
+const allDays4 = [...days, ...otherDays, "Sun"];
+console.log(allDays4);
+// [ 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun' ]
+
+const ob = {
+  first: "hi",
+  second: "hello",
+};
+const ab = {
+  third: "bye bye",
+};
+const two = { ...ob, ...ab };
+console.log(two);
+// { first: 'hi', second: 'hello', third: 'bye bye' }
