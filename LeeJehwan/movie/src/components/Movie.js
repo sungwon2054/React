@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Movie.css";
 
-function Movie({ year, title, summary, poster, genres }) {
+function Movie({ id, year, title, summary, poster, genres }) {
   const mumble =
     "There is no plot and it is so short that I just write it roughly. If you are curious, buy the movie yourself. But it might not be possible to see it because it is corona. Well, what else should I use? It might not be long this much, but it's not as long as I thought. Hmm";
   const finedSummary =
@@ -11,7 +11,7 @@ function Movie({ year, title, summary, poster, genres }) {
   return (
     <Link
       to={{
-        pathname: "/movie-detail",
+        pathname: `/movie/${id}`,
         state: {
           year,
           title,
@@ -41,6 +41,7 @@ function Movie({ year, title, summary, poster, genres }) {
 }
 
 Movie.propTypes = {
+  id: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,

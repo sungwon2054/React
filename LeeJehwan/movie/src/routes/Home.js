@@ -46,6 +46,7 @@ class Home extends React.Component {
               <Fade key={movie.id} left>
                 <Movie
                   key={movie.id}
+                  id={movie.id}
                   year={movie.year}
                   title={movie.title}
                   summary={movie.summary}
