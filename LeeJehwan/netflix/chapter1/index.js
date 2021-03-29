@@ -63,3 +63,29 @@ const ab = {
 const two = { ...ob, ...ab };
 console.log(two);
 // { first: 'hi', second: 'hello', third: 'bye bye' }
+
+// 1.5 Classes
+class Human {
+  constructor(name, lastName) {
+    this.name = name;
+    this.lastName = lastName;
+  }
+}
+
+const nico = new Human("nico", "serrano");
+console.log(nico);
+console.log(nico.name);
+
+class Baby extends Human {
+  cry() {
+    console.log("Waaaaaa");
+  }
+  sayName() {
+    console.log(`My name is ${this.name}`);
+  }
+}
+
+const myBaby = new Baby("mini", "me");
+console.log(myBaby);
+myBaby.cry();
+myBaby.sayName();
