@@ -89,3 +89,8 @@ const myBaby = new Baby("mini", "me");
 console.log(myBaby);
 myBaby.cry();
 myBaby.sayName();
+
+// 1.6 Array map
+const days2 = ["Mon", "Tues", "Wed", "Thu", "Fri"];
+const smilingDays = days2.map((day, index) => `#${index + 1} 🤣 ${day}`);
+console.log(smilingDays);
