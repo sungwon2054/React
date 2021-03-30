@@ -94,3 +94,32 @@ myBaby.sayName();
 const days2 = ["Mon", "Tues", "Wed", "Thu", "Fri"];
 const smilingDays = days2.map((day, index) => `#${index + 1} 🤣 ${day}`);
 console.log(smilingDays);
+
+// 1.7 Array filter
+const numbers = [
+  2,
+  24,
+  6454,
+  22,
+  456,
+  23,
+  67,
+  11,
+  443,
+  66,
+  223,
+  2,
+  4,
+  6,
+  89,
+  4,
+  2,
+  1,
+];
+
+const biggerThanFifteen = numbers.filter((number) => number > 15);
+console.log(biggerThanFifteen);
+
+let posts = ["Hi", "Hello", "Bye"];
+posts = posts.filter((post) => post !== "Bye");
+console.log(posts);
