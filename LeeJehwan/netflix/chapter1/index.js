@@ -123,3 +123,18 @@ console.log(biggerThanFifteen);
 let posts = ["Hi", "Hello", "Bye"];
 posts = posts.filter((post) => post !== "Bye");
 console.log(posts);
+
+// 1.8 forEach includes push
+posts = ["Hi", "Hello", "Bye"];
+posts.forEach((post) => console.log(post));
+
+posts.push("new");
+console.log(posts);
+
+let greetings = ["Hi", "Howdy", "Suup"];
+if (!greetings.includes("Hello")) {
+  greetings.push("Hello");
+}
+
+console.log(greetings);
+console.log(greetings.reverse());
