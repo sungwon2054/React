@@ -9,3 +9,9 @@
 - React-router-dom의 Link
   - Link는 a태그와 같은 역할을 하며 href 대신 to를 사용
 - extension : vscode-styled-components 을 사용하면 styled-component css 자동완성 사용가능
+
+# 3.4 Location Aware Header
+- widthRouter
+  - 컴포넌트를 깜사는 컴포넌트로 Router에 정보를 줌
+  - 한번 더 감싸서 props 사용 가능해짐
+  
