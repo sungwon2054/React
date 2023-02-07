@@ -1,30 +1,50 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-const Father = styled.div`
+const Wrapper = styled.div`
   display: flex;
 `;
 
-const Btn = styled.button`
-  width: 100px;
-  height: 100px;
+const rotationAnimation = keyframes`
+  0% {
+    transform:rotate(0deg);
+    border-radius:0px;
+  }
+  50% {
+    border-radius:100px;
+  }
+  100%{
+    transform:rotate(360deg);
+    border-radius:0px;
+  }
 `;
 
-const Input = styled.input.attrs({ required: true })`
-background-color: tomato;
+const Box = styled.div`
+  height: 200px;
+  width: 200px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ${rotationAnimation} 1s linear infinite;
+  span {
+    font-size: 36px;
+    &:hover {
+      font-size: 48px;
+    }
+    &:active {
+      opacity: 0;
+    }
+  }
 `;
 
 function App() {
-return (
-  <Father as="header">
-    <Btn />
-    <Btn as="a" href="/" />
-    <Input />
-    <Input />
-    <Input />
-    <Input />
-    <Input />
-  </Father>
-);
+  return (
+    <Wrapper>
+      <Box>
+        <span>🤩</span>
+      </Box>
+    </Wrapper>
+  );
 }
 
 export default App;
