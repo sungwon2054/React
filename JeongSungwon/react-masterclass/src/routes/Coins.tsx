@@ -36,8 +36,8 @@ const Coin = styled.li`
 
 const Title = styled.h1`
   font-size: 48px;
-  color: ${props => props.theme.accentColor};
-`
+  color: ${(props) => props.theme.accentColor};
+`;
 
 const Loader = styled.span`
   text-align: center;
@@ -45,13 +45,13 @@ const Loader = styled.span`
 `;
 
 interface CoinInterface {
-  id: string,
-  name: string,
-  symbol: string,
-  rank: number,
-  is_new: boolean,
-  is_active: boolean,
-  type: string,
+  id: string;
+  name: string;
+  symbol: string;
+  rank: number;
+  is_new: boolean;
+  is_active: boolean;
+  type: string;
 }
 
 function Coins() {
@@ -63,10 +63,8 @@ function Coins() {
       const json = await response.json();
       setCoins(json.slice(0, 100));
       setLoading(false);
-    })
-  })
-  
-
+    })();
+  }, []);
   return (
     <Container>
       <Header>
