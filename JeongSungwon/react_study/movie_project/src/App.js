@@ -6,13 +6,13 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/hello">
+        <Route path="/abot-us">
           <h1>hello</h1>
         </Route>
-        <Route path="/movie">
+        <Route path="/movie/:id">
           <Detail />
         </Route>
-        <Route path="/home">
+        <Route path="/">
           <Home />
         </Route>
       </Switch>
