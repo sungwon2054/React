@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/React/JeongSungwon/react_study/movie_project/static/js/main.04df7cad.js",
-    "index.html": "/React/JeongSungwon/react_study/movie_project/index.html",
-    "main.04df7cad.js.map": "/React/JeongSungwon/react_study/movie_project/static/js/main.04df7cad.js.map"
+    "main.js": "/React/static/js/main.569c3adf.js",
+    "index.html": "/React/index.html",
+    "main.569c3adf.js.map": "/React/static/js/main.569c3adf.js.map"
   },
   "entrypoints": [
-    "static/js/main.04df7cad.js"
+    "static/js/main.569c3adf.js"
   ]
 }
