@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/React/tree/main/JeongSungwon/react_study/movie_project/static/js/main.a3bc458d.js",
-    "index.html": "/React/tree/main/JeongSungwon/react_study/movie_project/index.html",
-    "main.a3bc458d.js.map": "/React/tree/main/JeongSungwon/react_study/movie_project/static/js/main.a3bc458d.js.map"
+    "main.js": "/React/JeongSungwon/react_study/movie_project/static/js/main.04df7cad.js",
+    "index.html": "/React/JeongSungwon/react_study/movie_project/index.html",
+    "main.04df7cad.js.map": "/React/JeongSungwon/react_study/movie_project/static/js/main.04df7cad.js.map"
   },
   "entrypoints": [
-    "static/js/main.a3bc458d.js"
+    "static/js/main.04df7cad.js"
   ]
 }
