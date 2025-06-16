@@ -14,6 +14,18 @@ import { fetchCoinInfo, fetchCoinTickers } from "../api";
 import Chart from "./Chart";
 import Price from "./Price";
 
+const ButtonArea = styled.div`
+  position: absolute;
+  top: 50px;
+  left: 10px;
+`
+
+const StyledLink = styled(Link)`
+  display: block;
+  width: 30px;
+  height: 30px;
+`
+
 const Title = styled.h1`
   font-size: 48px;
   color: ${(props) => props.theme.accentColor};
@@ -32,6 +44,7 @@ const Container = styled.div`
 
 const Header = styled.header`
   height: 15vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +178,12 @@ function Coin() {
         </title>
       </Helmet>
       <Header>
+        <ButtonArea>
+          <StyledLink to="/React">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" fill-rule="evenodd"></path>
+            </svg>
+          </StyledLink>
+        </ButtonArea>
         <Title>
           {state?.name ? state.name : loading ? "Loading..." : infoData?.name}
         </Title>
@@ -201,18 +220,18 @@ function Coin() {
 
           <Tabs>
             <Tab isActive={chartMatch !== null}>
-              <Link to={`/${coinId}/chart`}>Chart</Link>
+              <Link to={`/React/${coinId}/chart`}>Chart</Link>
             </Tab>
             <Tab isActive={priceMatch !== null}>
-              <Link to={`/${coinId}/price`}>Price</Link>
+              <Link to={`/React/${coinId}/price`}>Price</Link>
             </Tab>
           </Tabs>
 
           <Switch>
-            <Route path={`/:coinId/price`}>
-              <Price />
+            <Route path={`/React/:coinId/price`}>
+              <Price coinId={coinId}/>
             </Route>
-            <Route path={`/:coinId/chart`}>
+            <Route path={`/React/:coinId/chart`}>
               <Chart coinId={coinId}/>
             </Route>
           </Switch>
