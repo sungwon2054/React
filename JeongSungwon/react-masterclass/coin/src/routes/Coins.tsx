@@ -27,6 +27,7 @@ const Coin = styled.li`
   border-radius: 15px;
   margin-bottom: 10px;
   border: 1px solid white;
+  a {
     display: flex;
     align-items: center;
     padding: 20px;
