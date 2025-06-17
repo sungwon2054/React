@@ -185,7 +185,7 @@ function Coin() {
           </StyledLink>
         </ButtonArea>
         <Title>
-          {state?.name ? state.name : loading ? "Loading..." : infoData?.name}
+        <span>${tickersData?.quotes?.USD?.price?.toFixed(3)}</span>
         </Title>
       </Header>
       {loading ? (
